@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Ninjas Clone</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🥷</span>
+                        <span class="logo-text">Coding Ninjas</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#courses" class="nav-link">Courses</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#community" class="nav-link">Community</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Auth Buttons -->
+                <div class="nav-auth desktop-nav">
+                    <button class="btn btn--outline">Login</button>
+                    <button class="btn btn--primary">Sign Up</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </nav>
+            
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav hidden" id="mobileNav">
+                <div class="mobile-nav-links">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#courses" class="mobile-nav-link">Courses</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#community" class="mobile-nav-link">Community</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                </div>
+                <div class="mobile-nav-auth">
+                    <button class="btn btn--outline btn--full-width">Login</button>
+                    <button class="btn btn--primary btn--full-width">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Get the career you deserve, faster</h1>
+                        <p class="hero-subtitle">Master coding skills with India's top instructors. Get job-ready with hands-on projects, expert mentorship, and placement support.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn--primary btn--lg">Start Learning Today</button>
+                            <button class="btn btn--outline btn--lg">Explore Courses</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755264341/pplx_project_search_images/57cdb79794cdd57037183445b0167c2b31cf76bd.png" alt="Coding Ninjas Platform Preview" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid" id="statsGrid">
+                    <!-- Stats will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+
+        <!-- Courses Section -->
+        <section class="courses-section" id="courses">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Courses</h2>
+                    <p class="section-subtitle">Choose from our comprehensive range of courses designed by industry experts</p>
+                </div>
+                <div class="course-grid" id="courseGrid">
+                    <!-- Course cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose Coding Ninjas?</h2>
+                    <p class="section-subtitle">We provide everything you need to succeed in your coding journey</p>
+                </div>
+                <div class="features-grid" id="featuresGrid">
+                    <!-- Features will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="community">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Success Stories</h2>
+                    <p class="section-subtitle">Hear from our students who landed their dream jobs</p>
+                </div>
+                <div class="testimonials-grid" id="testimonialsGrid">
+                    <!-- Testimonials will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <span class="logo-icon">🥷</span>
+                            <span class="logo-text">Coding Ninjas</span>
+                        </div>
+                        <p class="footer-description">India's leading coding education platform helping students and professionals advance their careers.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Courses</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Java with DSA</a></li>
+                        <li><a href="#" class="footer-link">Web Development</a></li>
+                        <li><a href="#" class="footer-link">Data Science</a></li>
+                        <li><a href="#" class="footer-link">System Design</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Coding Ninjas. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" target="_blank">LinkedIn</a>
+                    <a href="#" class="social-link" target="_blank">Twitter</a>
+                    <a href="#" class="social-link" target="_blank">Instagram</a>
+                    <a href="#" class="social-link" target="_blank">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
